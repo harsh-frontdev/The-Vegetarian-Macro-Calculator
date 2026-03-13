@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Macro Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calculator-card">
+        <h1>Macro Calculator</h1>
+        <p class="subtitle">Pure Vegetarian Staples</p>
+
+        <div class="input-group">
+            <label for="food-select">Select Food Item:</label>
+            <select id="food-select">
+                <option value="paneer">Paneer (per 100g)</option>
+                <option value="dahi">Dahi/Yogurt (per 100g)</option>
+                <option value="chana">Chickpeas/Chana (per 100g)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="weight-input">Weight (in grams):</label>
+            <input type="number" id="weight-input" placeholder="e.g. 250" min="0">
+        </div>
+
+        <div class="results-container">
+            <div class="result-box">
+                <span class="label">Protein</span>
+                <span id="protein-display">0g</span>
+            </div>
+            <div class="result-box">
+                <span class="label">Calories</span>
+                <span id="calories-display">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

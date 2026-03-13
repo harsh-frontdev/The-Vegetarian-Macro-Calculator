@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f7f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+    border-top: 5px solid #2d6a4f;
+}
+
+h1 {
+    color: #1b4332;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #52b788;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: #52b788;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.result-box {
+    background: #f8fdfa;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #e0eee0;
+}
+
+.result-box .label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.result-box span:not(.label) {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d6a4f;
+}
